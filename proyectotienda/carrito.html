@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-mobile">
+            <h1 class="logo">ropita</h1>
+            <button id="abrir-menu" class="abrir-menu"><img class="imgmenu" src="./img/menu.png" alt=""> </button>
+        </header>
+        <aside id="aside" class="aside">
+            <button id="cerrar-menu" class="cerrar-menu"><img class="imgmenu-cerrar" src="./img/x.png" alt=""> </button>
+            <header>
+                <h1 class="logo">ropita</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a  class="boton-menu  boton-volver" href="./index.html"> <img class="imgvolver" src="./img/back.png" alt=""> seguir comprando </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu  boton-carrito active2" href="./carrito.html"> <img class="imgcarrito"  src="./img/carrito.png" alt=""> carrito</a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 ropita</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="vacio" class="carrito-vacio">tu carrito esta vacio</p>
+                
+                <div id="carrito-productos" class="carrito-productos disabled">
+
+
+
+
+                    
+
+
+
+
+                    
+                </div>
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button  onclick="vaciarCarrito()" class="carrito-acciones-vaciar">vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>TOTAL:</p>
+                            <p id="total">$50</p>
+                        </div>
+                        <button onclick="comprarCarrito()" class="carrito-acciones-comprar">comprar ahora</button>
+                    </div>
+                </div>
+                
+                <p id="comprando" class="carrito-comprado">Muchas gracias por tu compra.😄</p>
+
+            </div>
+        
+        </main>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+</html>

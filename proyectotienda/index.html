@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-mobile">
+            <h1 class="logo">ropita</h1>
+            <button id="abrir-menu" class="abrir-menu"><img class="imgmenu" src="./img/menu.png" alt=""> </button>
+        </header>
+        <aside id="aside" class="aside">
+            <button id="cerrar-menu" class="cerrar-menu"><img class="imgmenu-cerrar" src="./img/x.png" alt=""> </button>
+            <header>
+                <h1 class="logo">ropita</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos-productos" class="boton-menu boton-categoria active"><img class="imgdedo" src="./img/dedo.png" alt=""></i>todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="Chaquetas" class="boton-menu  boton-categoria"><img class="imgchaqueta" src="./img/chaqueta.png" alt="">Chaquetas</button>
+                    </li>
+                    <li>
+                        <button id="camisas" class="boton-menu  boton-categoria"><img class="imgcamisa" src="./img/camisa.png" alt="">Camisas</button>
+                    </li>
+                    <li>
+                        <button id="Pantalones" class="boton-menu  boton-categoria"><img class="imgpantalon" src="./img/pantalon.png" alt="">Pantalones</button>
+                    </li>
+                    <li>
+                        <button id="tenis" class="boton-menu  boton-categoria"><img class="imgzapato" src="./img/zapato.png" alt="">Calzado</button>
+                    </li>
+                    <li>
+                        <button id="limpieza" class="boton-menu boton-categoria"><img class="imglimpieza" src="./img/limpieza.png" alt=""> Limpieza</button>
+                    </li>
+                    <li>
+                        <a " class="boton-menu  boton-carrito" href="./carrito.html"><img class="imgcarrito" src="./img/carrito.png" alt="">Carrito<span id="numerito" class="numerito">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 ropita</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                
+            </div>
+        
+        </main>
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
